@@ -1,0 +1,22 @@
+def calculo():
+  while True:
+    peso = int(input('Digite o seu peso: '))
+    agua = peso * 35
+    print('')
+    print('Você precisa beber: {}ml de água por dia.'.format(agua))
+    print('')
+    x = input('Deseja continuar? s/n: ')
+    match x:
+      case 's':
+        calculo()
+      case 'n':
+        print('Bye.')
+        break
+
+print('')
+print('WATER CALCULATOR')
+print('')
+print('')
+print('Quantos litros você precisa tomar no dia?')
+print('')
+calculo()
